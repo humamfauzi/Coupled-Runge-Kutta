@@ -1,0 +1,19 @@
+a = [1]
+h = 0.01
+equation = ['u*(10-v)','v*(u-1)']
+d_val = 'u v' #THIS MUST BE ORDERED AS THE SAME AS STR_FUNC
+val_d_init = [0,0]
+val_d= 't t'
+incr = 5
+rktype = 'Classic'
+static = ' '
+static_init = []
+storage1 = np.zeros([len(a),incr])
+storage2 = np.zeros([len(a),incr])
+count1 = 0
+for n in a:
+    d_val_init = [n,n]
+    d_val_num, val_d_num = RK_Operation(rktype,equation,d_val,val_d,d_val_init,val_d_init,h,incr)
+    storage1[count1,:] = d_val_num[0,:]
+    storage2[count1,:] = d_val_num[1,:]
+    count1 += 1
