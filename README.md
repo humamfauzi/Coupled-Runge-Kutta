@@ -11,6 +11,3 @@ I accept all corrections and suggestions. Please feel free to ask me. My aim is 
 
 You can contact me at:
 humam.fauzi.93@gmail.com
-
-or you can Direct Message me at twitter:
-@hmm_fz
